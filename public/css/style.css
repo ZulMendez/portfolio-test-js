@@ -1,0 +1,306 @@
+body {
+    margin: 0;
+}
+
+header {
+    background-image: url('../img/background/portfolio_page_tab.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
+}
+/* #home:active, #skills:active, #portfolio:active, #contact:active {
+    text-decoration: underline;
+    cursor: pointer;
+} */
+
+/* navbar fixe */
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: transparent;
+    z-index: 1000;
+}
+
+.navbar {
+    display: flex;
+}
+
+.navbar-toggler {
+    width: 3rem;
+    left: 0;
+}
+
+.collapse {
+    display: flex;
+}
+
+.menu-bars {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.menu-bars a {
+    padding: 10px 100px;
+    text-decoration: none;
+    font-size: 25px;
+    color: whitesmoke;
+    display: flex;
+}
+
+.menu-bars a:hover {
+    color: #f1f1f1;
+}
+
+.menu-bars li {
+    list-style: none;
+}
+
+.logo {
+    width: 200px;
+    height: 150px;
+    background-color: none;
+    left: 0;
+    top: 0;
+}
+
+/* .about {
+    
+} */
+.icones {
+    padding: 150px 0;
+}
+
+.vertical {
+    border-left: 3px solid white;
+    height: 170px;
+    margin-left: 50%;
+}
+
+.icones i {
+    font-size: 30px;
+    color: #f1f1f1;
+    display: block;
+    background-color: none;
+    margin: 30px 15px;
+}
+
+.icones p {
+    color: #f1f1f1;
+    text-align: center;
+}
+
+.titre {
+    text-align: center;
+    padding-left: 50px;
+}
+
+.titre p {
+    color: white;
+    font-size: 60px;
+    font-family: sans-serif;
+    left: 15%;
+}
+
+.titre span {
+    color: #f1f1f1;
+    font-size: 50px;
+    font-family: sans-serif;
+    left: 15%;
+}
+
+/* Style page content */
+.skill {
+    background-image: url('../img/background/portfolio_page_tab2.jpg');
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.titreSkills {
+    padding-top: 140px;
+}
+
+.imgSkill {
+    width: 100%;
+}
+
+.project {
+    background-image: url('../img/background/portfolio_page_tab2.jpg');
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.portf {
+    padding: 140px 100px 50px 100px;
+    color: white;
+    display: flex;
+    justify-content: space-around;
+}
+
+.photoS {
+    border: 3px solid yellow;
+    border-radius: 10px;
+    margin: 20px;
+    box-shadow: 0px 15px 19px -6px black;
+}
+
+.btn {
+    margin: 40px 110px;
+    padding: 0px 20px;
+    font-size: 50px;
+    box-shadow: 0px 15px 19px -6px black;
+}
+.btn:hover {
+    background-color: rgb(243, 243, 89);
+}
+
+.portf h3 {
+    text-align: center;
+}
+
+/* Modal Content/Box */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.modal-content {
+    background-color: transparent;
+    margin: 10% 18%;
+    border: none;
+}
+
+.modal-content img {
+    width: 400px;
+    height: 350px;
+    padding: 10px 0;
+    border-radius: 15px;
+    box-shadow: 0px 15px 19px -6px black;
+}
+
+.imgSous {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+/* The Close Button */
+.close, .close2, .close3, .close4, .close5 {
+    color: #aaa;
+    float: right;
+    font-size: 30px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.close:hover,
+.close:focus,
+.close2:hover,
+.close2:focus,
+.close3:hover,
+.close3:focus,
+.close4:hover,
+.close4:focus,
+.close5:hover,
+.close5:focus {
+    color: yellow;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.contact {
+    background-image: url('../img/background/portfolio_page_tab2.jpg');
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.formCont {
+    width: 69%;
+    margin: auto;
+    padding: 150px 0px 100px 0px;
+}
+
+form {
+    padding: 50px 0px 50px 0;
+    height: 350px;
+    background-color: grey;
+    border-radius: 15px;
+    box-shadow: 0px 15px 19px -6px black;
+}
+
+form label {
+    padding-left: 30px;
+}
+form input {
+    margin: 0 20px;
+    background-color: grey;
+    border: transparent;
+    border-bottom: 2px solid rgb(90, 88, 88);
+    cursor: pointer;
+}
+form .C {
+    display: flex;
+    flex-direction: column;
+}
+
+.butCont button {
+    width: 130px;
+    height: 50px;
+    background-color: black;
+    color: yellow;
+    font-weight: bold;
+    font-size: 20px;
+    margin-top: 30px;
+    border-radius: 5px;
+    box-shadow: 0px 15px 19px -6px black;
+}
+.butCont button:hover {
+    background-color: rgb(78, 76, 76);
+    box-shadow: 0px 15px 19px -6px black;
+    border: none;
+}
+
+hr {
+    width: 80%;
+    height: 2px;
+    background-color: rgb(121, 118, 118);
+}
+
+footer {
+    background-color: rgb(78, 77, 77);
+}
+
+footer h6 {
+    color: white;
+}
+
+.logoEnd {
+    width: 200px;
+    height: 180px;
+}
+
+.copy {
+    text-align: end;
+}
+
+/* @media screen and (max-height: 450px) {
+    .menu-bars {
+        padding-top: 15px;
+    }
+
+    .menu-bars a {
+        font-size: 18px;
+    }
+} */
