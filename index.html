@@ -14,7 +14,13 @@
         integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
     <!-- CDN FONT -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@200&display=swap" rel="stylesheet">
+    
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Marck+Script&display=swap" rel="stylesheet">
+    
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Mrs+Saint+Delafield&display=swap" rel="stylesheet">
     <!-- CSS -->
     <link rel="stylesheet" href="/public/css/style.css">
 </head>
@@ -24,10 +30,10 @@
     <!-- header - navbar -->
     <header id="myHeader">
         <nav id="portfolio" class="navbar navbar-expand-lg w-100">
-            <div id="logo" class="image">
+            
                 <img class="logo" src="./public/img/background/logo_desktop2.png" alt="logo">
-            </div>
-            <div class="container-fluid">
+            
+            <div class="container">
                 <a class="navbar-brand" href="#"></a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse"
                     data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
@@ -39,64 +45,68 @@
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul id="navbar" class="menu-bars navbar-nav-scroll mb-4">
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#home">Home</a>
+                            <a class="nav-link" aria-current="page" href="#home">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#skills">Skills</a>
+                            <a class="nav-link" href="#skill">Skills</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#projects">Portfolio</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#contact">Contact</a>
+                            <a class="nav-link:active" href="#contact">Contact</a>
                         </li>
                     </ul>
                 </div>
             </div>
         </nav>
         <div id='home' class="mel">
-            <div class="about">
+            
+            <div class="infos">
                 <div class="icones">
                     <div class="vertical"></div>
-                    <i class="fab fa-facebook-square"></i>
-                    <i class="fab fa-instagram"></i>
-                    <i class="fab fa-twitter-square"></i>
+                        <a href="https://www.facebook.com/melany.wml"><i class="fab fa-facebook-square"></i></a>
+                        <a href="https://instagram.com/melany_wml?utm_medium=copy_link"><i class="fab fa-instagram"></i></a>
+                        <a href="https://mobile.twitter.com/WeemolMelany"><i class="fab fa-twitter-square"></i></a>
                     <div class="vertical"></div>
-                    <div class="titre">
-                        <p class="text-white">Melany</p>
-                        <span>Graphic Designer</span>
-                    </div>
                 </div>
             </div>
-        </div>
+            <div class="titre">
+                <p class="text-white">Melany</p>
+                <span>Graphic Designer</span>
+            </div>
+        </div> 
     </header>
 <!-- END header - navbar -->
 <!-- SKILLS -->
     <section id='skills' class="skill">
-        <div class="titreSkills text-center">
-            <h1 class="text-white">About me</h1>
-            <h2 class="text-warning">Melany Weemol</h2>
-        </div>
-        <div class="skills">
-            <img class="imgSkill" src="public/img/background/skills-1.png" alt="skills">
-        </div>
-        <div class="d-flex justify-content-around">
-            <div class="text-center">
-                <h2 class="text-white">22 years old</h2>
-                <h2 class="text-white">Graphic Designer</h2>
+        <div id="skill">
+            <div class="titreSkills text-center">
+                <h1 class="bigtitle text-center text-white">About me</h1>
+                <h2 class="text-warning">Melany Weemol</h2>
             </div>
-            <div class="text-center">
-                <h2 class="text-white">Would like to be a</h2>
-                <h2 class="text-warning">Tattoo Artist</h2>
+            <div class="skills">
+                <img class="imgSkill" src="public/img/background/skills-1.png" alt="skills">
             </div>
-        </div>
-        <div class="text-center py-5">
-            <h2 class="text-white">Student at <span class="text-warning">EPSE</span></h2>
+            <div class="d-flex justify-content-around">
+                <div class="text-center">
+                    <h2 class="text-white">22 years old</h2>
+                    <h2 class="text-white">Graphic Designer</h2>
+                </div>
+                <div class="text-center">
+                    <h2 class="text-white">Would like to be a</h2>
+                    <h2 class="text-warning">Tattoo Artist</h2>
+                </div>
+            </div>
+            <div class="text-center py-5">
+                <h2 class="text-white">Student at <span class="text-warning">EPSE</span></h2>
+            </div>
         </div>
     </section>
 <!-- END SKILLS -->
 <!-- PROJECTS -->
     <section id='projects' class="project">
+        <h1 class="bigtitle text-center text-white">Portfolio</h1>
         <div class="row portf">
             <div class="col-4">
                 <div class="photoS">
@@ -130,7 +140,7 @@
                         <button id="myBtn2" class="btn btn-warning font-weight-bold">Id</button>
                     </div>
                     <div>
-                        <h3>Mise en page</h3>
+                        <h3>Layout</h3>
                     </div>
                     <!-- Modal -->
                     <div id="myModal2" class="modal">
@@ -148,10 +158,10 @@
             <div class="col-4">
                 <div>
                     <div class="photoS">
-                        <button id="myBtn3" class="btn btn-warning font-weight-bold">Ps</button>
+                        <button id="myBtn3" class="btn btn-warning font-weight-bold"><img src="./public/img/Logo camera pour photographie.png" alt=""></button>
                     </div>
                     <div>
-                        <h3>Photographie</h3>
+                        <h3>Photography</h3>
                     </div>
                     <!-- Modal -->
                     <div id="myModal3" class="modal">
@@ -177,10 +187,10 @@
             <div class="col-4">
                 <div>
                     <div class="photoS">
-                        <button id="myBtn4" class="btn btn-warning font-weight-bold">Ps</button>
+                        <button id="myBtn4" class="btn btn-warning font-weight-bold"><img src="./public/img/Logo tablette pour dessins.png" alt=""></button>
                     </div>
                     <div>
-                        <h3>Dessins</h3>
+                        <h3>Drawings</h3>
                     </div>
                     <!-- Modal -->
                     <div id="myModal4" class="modal">
@@ -226,6 +236,7 @@
     <!-- END PROJECTS -->
     <!-- CONTACT -->
     <section id='contact' class="contact">
+        <h1 class="bigtitle text-center text-white">Contact me</h1>
         <div class="formCont container">
             <form action="post">
                 <div class="row">
@@ -271,17 +282,17 @@
                         <h6>Contact</h6>
                     </a>
                 </div>
-                <div class="col-3">
+                <div class="col-3 textfooter">
                     <h2>Contact me</h2>
                     <p>0470/83.36.74</p>
                     <span>Melanywml@gmail.com</span>
                 </div>
                 <div class="col-3">
                     <h2>Connect with me</h2>
-                    <div class="d-flex justify-content-around">
-                        <i class="fab fa-facebook-square"></i>
-                        <i class="fab fa-instagram"></i>
-                        <i class="fab fa-twitter-square"></i>
+                    <div class="reseaux">
+                        <a href="https://www.facebook.com/melany.wml"><i class="fab fa-facebook-square"></i></a>
+                        <a href="https://instagram.com/melany_wml?utm_medium=copy_link"><i class="fab fa-instagram"></i></a>
+                        <a href="https://mobile.twitter.com/WeemolMelany"><i class="fab fa-twitter-square"></i></a>
                     </div>
                 </div>
                 <div class="col-3">
@@ -297,12 +308,8 @@
 
     <!-- js -->
     <script src="./public/js/main.js"></script>
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
-    </script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous">
-    </script>
+
+    <script type="text/javascript" src="jquery-1.7.1.min.js"></script>
 
 </body>
 </html>

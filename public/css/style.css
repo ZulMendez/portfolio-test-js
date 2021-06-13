@@ -1,18 +1,54 @@
 body {
     margin: 0;
 }
+/* @font-face {
+    font-family: 'Photograph Signature';
+    src: url('../font/PhotographSignature/Photograph\ Signature.ttf');
+} */
 
+/* SECTION NAVBAR */
 header {
     background-image: url('../img/background/portfolio_page_tab.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+    
 }
-/* #home:active, #skills:active, #portfolio:active, #contact:active {
+/* #navbar:active {
     text-decoration: underline;
-    cursor: pointer;
 } */
-
+.active { 
+    text-decoration: underline;
+}
+.navbar {
+    display: flex;
+}
+.navbar-toggler {
+    width: 3rem;
+    left: 0;
+}
+.collapse {
+    display: flex;
+}
+#navbar {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px 50px;
+}
+.menu-bars a {
+    padding: 10px 80px;
+    text-decoration: none;
+    font-size: 25px;
+    color: whitesmoke;
+    font-family: 'Tajawal', sans-serif;
+}
+.menu-bars a:hover {
+    color: #f1f1f1;
+}
+.menu-bars li {
+    list-style: none;
+}
 /* navbar fixe */
 .sticky {
     position: fixed;
@@ -22,57 +58,23 @@ header {
     z-index: 1000;
 }
 
-.navbar {
+/* SECTION HOME */
+#home {
     display: flex;
+    justify-content: start;
+    align-items: center;
 }
-
-.navbar-toggler {
-    width: 3rem;
-    left: 0;
-}
-
-.collapse {
-    display: flex;
-}
-
-.menu-bars {
-    display: flex;
-    justify-content: space-evenly;
-}
-
-.menu-bars a {
-    padding: 10px 100px;
-    text-decoration: none;
-    font-size: 25px;
-    color: whitesmoke;
-    display: flex;
-}
-
-.menu-bars a:hover {
-    color: #f1f1f1;
-}
-
-.menu-bars li {
-    list-style: none;
-}
-
 .logo {
     width: 200px;
     background-color: none;
     left: 0;
     top: 0;
 }
-
-.icones {
-    padding: 130px 0;
-}
-
 .vertical {
     border-left: 3px solid white;
     height: 170px;
     margin-left: 50px;
 }
-
 .icones i {
     font-size: 30px;
     color: #f1f1f1;
@@ -80,46 +82,41 @@ header {
     background-color: none;
     margin: 30px 40px;
 }
-
 .titre {
     text-align: center;
-    font-family: sans-serif;
-    padding-right: 50%;
+    font-family: 'Tajawal', sans-serif;
 }
-
 .titre p {
     color: white;
     font-size: 60px;
-    font-family: sans-serif;
-    top: 50%;
 }
-
 .titre span {
     color: #f1f1f1;
     font-size: 50px;
-    font-family: sans-serif;
-    left: 15%;
 }
-
-/* Style page content */
+/* SECTION SKILLS */
 #skills {
     background-image: url('../img/background/portfolio_page_tab2.jpg');
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-size: cover;
 }
+#skill {
+    margin: auto;
+}
+/* .titreSkills {
+    padding-top: 120px;
+} */
+.bigtitle {
+    font-family: 'Mrs Saint Delafield', cursive;
+    font-size: 110px;
+}
 
-.titreSkills {
-    padding-top: 100px;
-    font-family: sans-serif;
-}
-.titreSkills h1 {
-    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
-}
 .imgSkill {
     width: 100%;
 }
 
+/* SECTION PROJECTS */
 #projects {
     background-image: url('../img/background/portfolio_page_tab2.jpg');
     background-attachment: fixed;
@@ -128,7 +125,7 @@ header {
 }
 
 .portf {
-    padding: 140px 100px 50px 100px;
+    padding: 0px 100px 50px 100px;
     color: white;
     display: flex;
     justify-content: space-around;
@@ -150,13 +147,17 @@ header {
 .btn:hover {
     background-color: rgb(243, 243, 89);
 }
+.btn img {
+    width: 40px;
+    height: 40px;
+}
 
 .portf h3 {
     text-align: center;
     font-family: sans-serif;
 }
 
-/* Modal Content/Box */
+/* Modal Content-Box */
 .modal {
     display: none;
     position: fixed;
@@ -215,6 +216,7 @@ header {
     cursor: pointer;
 }
 
+/* SECTION CONTACT */
 #contact {
     background-image: url('../img/background/portfolio_page_tab2.jpg');
     background-attachment: fixed;
@@ -225,7 +227,7 @@ header {
 .formCont {
     width: 69%;
     margin: auto;
-    padding: 150px 0px 100px 0px;
+    padding: 50px 0;
 }
 
 form {
@@ -268,33 +270,36 @@ form .C {
     border: none;
 }
 
-hr {
-    width: 80%;
-    height: 2px;
-    background-color: rgb(121, 118, 118);
-}
-
+/* SECTION FOOTER */
 footer {
     background-color: rgb(77, 75, 75);
 }
 
 footer h6 {
     color: white;
-    font-family: sans-serif;
+    font-family: 'Tajawal', sans-serif;
 }
 
 footer h2 {
     padding: 20px 0;
-    font-family: sans-serif;
+    font-family: 'Tajawal', sans-serif;
+}
+.textfooter {
+    font-family: 'Tajawal', sans-serif;
 }
 
+.reseaux {
+    padding: 0 20px;
+}
 footer i {
     color: white;
-    font-size: 30px;
+    font-size: 27px;
+    padding: 0 18px;
 }
 
 .logoEnd {
     width: 200px;
+    padding: 20px 0;
 }
 
 .copy {
@@ -303,16 +308,7 @@ footer i {
 .copy p {
     color: white;
     font-weight: bold;
-    font-family: sans-serif;
+    font-family: 'Tajawal', sans-serif;
     border: 1px solid rgb(121, 118, 118);
 }
 
-/* @media screen and (max-height: 450px) {
-    .menu-bars {
-        padding-top: 15px;
-    }
-
-    .menu-bars a {
-        font-size: 18px;
-    }
-} */

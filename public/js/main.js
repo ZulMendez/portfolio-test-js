@@ -18,19 +18,15 @@ window.onscroll = function () {
     myFunction()
 };
 
-// scroll links au click
-// $(function () {
-//     var cible;
-//     $(".nav-link").onclick(function (e) {
-//         e.preventDefault(); //empêcher le navigateur de suivre le lien du <a> sur lequel tu as cliqué 
-//         cible = $('#' + $(this).attr('href').replace('#', ''));
-//         $('.navbar-nav').find('.nav-link').removeClass('active'); //supprime la class active de tout les a.nav-link
-//         $(this).addClass('active'); //attribuer la classe active à l’élément cliqué
-//         console.log('le id cible :' + cible.attr('id') +
-//             ' est à :' + cible.offset().top + 'px du top.');
-//         $('html,body').scrollTop(cible.offset().top);
-//     });
-// });
+// navbar active
+
+// let lien = document.getElementsByClassName('nav-item');
+// let home = document.getElementById('un');
+
+
+//     home.onclick = function () {
+//         this.classList.add('active');
+//     };
 
 // modal photoshop
 let modal = document.getElementById("myModal");
