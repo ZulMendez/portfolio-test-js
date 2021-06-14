@@ -1,22 +1,15 @@
 body {
     margin: 0;
 }
-/* @font-face {
-    font-family: 'Photograph Signature';
-    src: url('../font/PhotographSignature/Photograph\ Signature.ttf');
-} */
 
 /* SECTION NAVBAR */
 header {
     background-image: url('../img/background/portfolio_page_tab.jpg');
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: 100% 100%;
     background-position: center;
-    
+    /* height: 90vh; */
 }
-/* #navbar:active {
-    text-decoration: underline;
-} */
 .active { 
     text-decoration: underline;
 }
@@ -24,8 +17,7 @@ header {
     display: flex;
 }
 .navbar-toggler {
-    width: 3rem;
-    left: 0;
+    display: none;
 }
 .collapse {
     display: flex;
@@ -34,13 +26,12 @@ header {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    padding: 10px 50px;
 }
 .menu-bars a {
-    padding: 10px 80px;
+    padding: 0px 80px;
     text-decoration: none;
-    font-size: 25px;
-    color: whitesmoke;
+    font-size: 30px;
+    color: white;
     font-family: 'Tajawal', sans-serif;
 }
 .menu-bars a:hover {
@@ -63,6 +54,9 @@ header {
     display: flex;
     justify-content: start;
     align-items: center;
+}
+.logoRespon img {
+    display: none;
 }
 .logo {
     width: 200px;
@@ -97,42 +91,55 @@ header {
 /* SECTION SKILLS */
 #skills {
     background-image: url('../img/background/portfolio_page_tab2.jpg');
-    background-attachment: fixed;
+    /* background-attachment: fixed; */
     background-repeat: no-repeat;
     background-size: cover;
 }
 #skill {
     margin: auto;
 }
-/* .titreSkills {
-    padding-top: 120px;
-} */
 .bigtitle {
     font-family: 'Mrs Saint Delafield', cursive;
     font-size: 110px;
+    padding-top: 50px;
 }
-
+.textyellow {
+    color: #FFED4F;
+}
 .imgSkill {
     width: 100%;
+}
+.textResp {
+    font-size: 40px;
 }
 
 /* SECTION PROJECTS */
 #projects {
     background-image: url('../img/background/portfolio_page_tab2.jpg');
-    background-attachment: fixed;
+    /* background-attachment: fixed; */
     background-repeat: no-repeat;
     background-size: cover;
 }
-
+.imgButton {
+    background-color: transparent;
+    margin: 40px 110px;
+    padding: 0px 20px;
+    font-size: 50px;
+    box-shadow: 0px 15px 19px -6px black;
+    border-radius: 10px;
+}
+.imgButton img {
+    width: 80px;
+    height: 80px;
+}
 .portf {
-    padding: 0px 100px 50px 100px;
     color: white;
     display: flex;
     justify-content: space-around;
 }
 
 .photoS {
-    border: 3px solid yellow;
+    border: 3px solid #FFED4F;
     border-radius: 10px;
     margin: 20px;
     box-shadow: 0px 15px 19px -6px black;
@@ -143,18 +150,15 @@ header {
     padding: 0px 20px;
     font-size: 50px;
     box-shadow: 0px 15px 19px -6px black;
+    background-color: #FFED4F;
 }
 .btn:hover {
-    background-color: rgb(243, 243, 89);
-}
-.btn img {
-    width: 40px;
-    height: 40px;
+    background-color: #faed79
 }
 
 .portf h3 {
     text-align: center;
-    font-family: sans-serif;
+    font-family: 'Tajawal', sans-serif;
 }
 
 /* Modal Content-Box */
@@ -211,7 +215,7 @@ header {
 .close4:focus,
 .close5:hover,
 .close5:focus {
-    color: yellow;
+    color: #FFED4F;
     text-decoration: none;
     cursor: pointer;
 }
@@ -219,7 +223,7 @@ header {
 /* SECTION CONTACT */
 #contact {
     background-image: url('../img/background/portfolio_page_tab2.jpg');
-    background-attachment: fixed;
+    /* background-attachment: fixed; */
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -240,6 +244,8 @@ form {
 
 form label {
     padding-left: 30px;
+    font-family: 'Tajawal', sans-serif;
+    font-size: 20px;
 }
 form input {
     margin: 0 20px;
@@ -257,7 +263,7 @@ form .C {
     width: 130px;
     height: 50px;
     background-color: black;
-    color: yellow;
+    color: #FFED4F;
     font-weight: bold;
     font-size: 20px;
     margin-top: 30px;
@@ -310,5 +316,150 @@ footer i {
     font-weight: bold;
     font-family: 'Tajawal', sans-serif;
     border: 1px solid rgb(121, 118, 118);
+}
+
+
+/* responsive */
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+
+}
+@media only screen and (max-width: 600px) {
+    
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (max-width: 768px) {
+    header {
+        background-image: url('../img/background/portfolio_page_tab.jpg');
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        background-position: center;
+        height: 50vh;
+    }
+    #skills {
+        background-image: url('../img/background/portfolio_page_tab2.jpg');
+        
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        background-position: center;
+    }
+    #projects {
+        background-image: url('../img/background/portfolio_page_tab2.jpg');
+        
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        background-position: center;
+    }
+    #contact {
+        background-image: url('../img/background/portfolio_page_tab2.jpg');
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        background-position: center;
+    }
+    .navbar-toggler {
+        width: 5rem;
+        color: white;
+        display: flex;
+        margin-right: 100%;
+    }
+    .sticky {
+        display: none;
+    }
+    .logo {
+        display: none;
+    }
+    .logoRespon {
+        padding-top: 3%;
+    }
+    .logoRespon img {
+        display: flex;
+        width: 250px;
+        height: 250px;
+        z-index: 1000;
+        padding-top: 25%;
+        padding-left: 5%;
+    }
+    .logoRespon span {
+        display: flex;
+        font-family: 'Tajawal', sans-serif;
+        font-size: 20px;
+        color: white;
+        text-align: center;
+        padding-left: 25%;
+    }
+    .vertical {
+        display: none;
+    }
+    .icones i {
+        display: none;
+    }
+    .titre {
+        display: none;
+    }
+
+    /* skills */
+    .bigtitle {
+        font-family: 'Mrs Saint Delafield', cursive;
+        font-size: 70px;
+        padding-top: 50px;
+    }
+    .textyellow {
+        color: #FFED4F;
+        font-size: 20px;
+    }
+    .imgSkill {
+        width: 100%;
+    }
+    .textResp {
+        font-size: 20px;
+    }
+    
+    /* projects */
+    .imgButton {
+        background-color: transparent;
+        margin: 20px 40px;
+        font-size: 40px;
+        box-shadow: 0px 15px 19px -6px black;
+        border-radius: 10px;
+    }
+    .imgButton img {
+        width: 40px;
+        height: 40px;
+    }
+    .portf {
+        color: white;
+        display: flex;
+        justify-content: space-around;
+    }
+    
+    .photoS {
+        border: 1px solid #FFED4F;
+        border-radius: 10px;
+        margin: 20px;
+        box-shadow: 0px 15px 19px -6px black;
+    }
+    
+    .btn {
+        margin: 20px 40px;
+        font-size: 40px;
+        box-shadow: 0px 15px 19px -6px black;
+        border-radius: 10px;
+        background-color: #FFED4F;
+    }
+    .btn:hover {
+        background-color: #faed79
+    }
+    
+    .portf h3 {
+        text-align: center;
+        font-family: 'Tajawal', sans-serif;
+        font-size: 20px;
+    }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+
 }
 
