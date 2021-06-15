@@ -55,7 +55,7 @@ header {
     justify-content: start;
     align-items: center;
 }
-.logoRespon img {
+.logoRespon {
     display: none;
 }
 .logo {
@@ -318,18 +318,242 @@ footer i {
     border: 1px solid rgb(121, 118, 118);
 }
 
+.infosEnd {
+    display: none;
+}
+
 
 /* responsive */
-/* Small devices (portrait tablets and large phones, 600px and up) */
-@media only screen and (min-width: 600px) {
-
-}
 @media only screen and (max-width: 600px) {
+    header {
+        background-image: url('../img/background/portfolio_page_tab.jpg');
+        background-repeat: no-repeat;
+        background-size: center 70%;
+        background-position: center;
+        height: 40vh;
+    }
+    #skills {
+        background-image: url('../img/background/portfolio_page_tab2.jpg');
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        background-position: center;
+    }
+    #projects {
+        background-image: url('../img/background/portfolio_page_tab2.jpg');
+        
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        background-position: center;
+    }
+    #contact {
+        background-image: url('../img/background/portfolio_page_tab2.jpg');
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        background-position: center;
+    }
+    .navbar-toggler {
+        width: 5rem;
+        color: white;
+        display: flex;
+        margin-right: 100%;
+    }
+    .sticky {
+        display: none;
+    }
+    .logo {
+        display: none;
+    }
+    .logoRespon {
+        display: block; 
+    }
+    .logoRespon img {
+        width: 150px;
+        height: 150px;
+        z-index: 1000;
+        padding-top: 10%;
+        padding-left: 0%;
+    }
+    .logoRespon span {
+        display: flex;
+        font-family: 'Tajawal', sans-serif;
+        font-size: 17px;
+        color: white;
+        text-align: center;
+        padding-left: 10%;
+    }
+    .vertical {
+        display: none;
+    }
+    .icones {
+        display: none;
+    }
+    .titre {
+        display: none;
+    }
+
+    /* skills */
+    .bigtitle {
+        font-family: 'Mrs Saint Delafield', cursive;
+        font-size: 50px;
+        padding-top: 50px;
+    }
+    .textyellow {
+        color: #FFED4F;
+        font-size: 15px;
+    }
+    .imgSkill {
+        width: 100%;
+    }
+    .textResp {
+        font-size: 13px;
+    }
+
+    /* projects */
+    .imgButton {
+        background-color: transparent;
+        margin: 20px 10px;
+        font-size: 30px;
+        box-shadow: 0px 15px 19px -6px black;
+        border-radius: 10px;
+    }
+    .imgButton img {
+        width: 30px;
+        height: 30px;
+    }
+    .portf {
+        color: white;
+        display: flex;
+        justify-content: center;
+    }
+    
+    .photoS {
+        border: 1px solid #FFED4F;
+        border-radius: 10px;
+        margin: auto;
+        box-shadow: 0px 15px 19px -6px black;
+    }
+    .btn {
+        margin: 20px 10px;
+        font-size: 30px;
+        box-shadow: 0px 15px 19px -6px black;
+        border-radius: 10px;
+        background-color: #FFED4F;
+    }
+    .btn:hover {
+        background-color: #faed79
+    }
+    .portf h3 {
+        text-align: center;
+        font-family: 'Tajawal', sans-serif;
+        font-size: 17px;
+    }
+    .modal {
+        display: none;
+        position: fixed;
+        z-index: 1;
+        left: 0;
+        top: 20%;
+        width: 80%;
+        height: 70%;
+    }
+    .modal-content {
+        background-color: transparent;
+        margin: 5% 5%;
+        border: none;
+    }
+    .modal-content img {
+        width: 200px;
+        height: 200px;
+        padding: 10px 0;
+    }
+    .close, .close2, .close3, .close4, .close5 {
+        font-size: 20px;
+    }
+    /* contact */
+    .formCont {
+        width: 50%;
+        margin: auto;
+        padding: 20px 0;
+    }
+    form {
+        padding: 30px 0px 30px 0px;
+        height: 330px;
+    }
+    form .row {
+        display: block;
+    }
+    form label {
+        font-size: 15px;
+    }
+    form input {
+        margin: 0 10px;
+        background-color: grey;
+        border: transparent;
+        border-bottom: 1px solid rgb(90, 88, 88);
+        cursor: pointer;
+    }
+    .butCont button {
+        width: 80px;
+        height: 40px;
+        font-size: 13px;
+        font-weight: normal;
+    }
+    /* footer */
+    footer h6 {
+        color: white;
+        font-family: 'Tajawal', sans-serif;
+        padding-left: 50%;
+    }
+    .container {
+        display: flex;
+    }
+    .endResp {
+        display: block;
+    }
+    footer h2 {
+        font-size: 35px;
+        padding-left: 50%;
+    }
+    .reseaux i {
+        display: none;
+    }
+    .infosEnd {
+        display: flex;
+        justify-content: space-evenly;
+    }
+    .infosEnd .vert {
+        display: flex;
+        border-left: 3px solid white;
+        height: 110px;
+        margin-left: 130px;
+        margin-top: 5px;
+    }
+    .infosEnd i {
+        font-size: 30px;
+        color: #f1f1f1;
+        display: block;
+        background-color: transparent;
+        margin: 30px 100px;
+    }
+    .textEnd {
+        display: none;
+    }
+    .logoEnd {
+        display: none;
+    }
+    .copy p {
+        font-weight: normal;
+        /* position: absolute;
+        width: 413px;
+        height: 47px;
+        left: 413px;
+        top: 534px; */
+    }
     
 }
 
 /* Medium devices (landscape tablets, 768px and up) */
-@media only screen and (max-width: 768px) {
+@media only screen and (min-width: 768px) {
     header {
         background-image: url('../img/background/portfolio_page_tab.jpg');
         background-repeat: no-repeat;
@@ -370,6 +594,7 @@ footer i {
         display: none;
     }
     .logoRespon {
+        display: block;
         padding-top: 3%;
     }
     .logoRespon img {
@@ -414,7 +639,7 @@ footer i {
     .textResp {
         font-size: 20px;
     }
-    
+
     /* projects */
     .imgButton {
         background-color: transparent;
@@ -456,6 +681,76 @@ footer i {
         font-family: 'Tajawal', sans-serif;
         font-size: 20px;
     }
+    .modal {
+        display: none;
+        position: fixed;
+        z-index: 1;
+        left: 0;
+        top: 5%;
+        width: 100%;
+        height: 100%;
+    }
+    .modal-content {
+        background-color: transparent;
+        margin: 5% 10%;
+        border: none;
+    }
+    .modal-content img {
+        width: 200px;
+        height: 200px;
+        padding: 10px 0;
+    }
+    .close, .close2, .close3, .close4, .close5 {
+        font-size: 20px;
+    }
+
+    /* contact */
+    .formCont {
+        width: 65%;
+        margin: auto;
+        padding: 20px 0;
+    }
+    form {
+        padding: 30px 0px 30px 0;
+        height: 320px;
+    }
+    form label {
+        font-size: 17px;
+    }
+    form input {
+        margin: 0 20px;
+        background-color: grey;
+        border: transparent;
+        border-bottom: 2px solid rgb(90, 88, 88);
+        cursor: pointer;
+    }
+    .butCont button {
+        width: 90px;
+        height: 40px;
+        font-size: 17px;
+        font-weight: normal;
+    }
+    /* footer */
+    footer h6 {
+        color: white;
+        font-family: 'Tajawal', sans-serif;
+    }
+    
+    footer h2 {
+        font-size: 22px;
+    }
+    .reseaux i {
+        padding: 0 7px;
+        font-size: 22px;
+    }
+    .logoEnd {
+        width: 150px;
+        padding: 20px 0;
+    }
+    .copy p {
+        font-weight: normal;
+    }
+    
 }
 
 /* Large devices (laptops/desktops, 992px and up) */
