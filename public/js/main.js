@@ -19,14 +19,16 @@ window.onscroll = function () {
 };
 
 // navbar active
+let lien = document.querySelectorAll('.nav-link');
 
-// let lien = document.getElementsByClassName('nav-item');
-// let home = document.getElementById('un');
-
-
-//     home.onclick = function () {
-//         this.classList.add('active');
-//     };
+lien.forEach(el => {
+    el.addEventListener('click', () => {
+        lien.forEach(el => {
+            el.classList.remove('un')
+        })
+        el.classList.add('un')
+    })
+});
 
 // modal photoshop
 let modal = document.getElementById("myModal");
@@ -35,10 +37,12 @@ let span = document.getElementsByClassName("close")[0];
 
 btn.onclick = function () {
     modal.style.display = "flex";
+    document.body.style.overflow = 'hidden'
 }
 
 span.onclick = function () {
     modal.style.display = "none";
+    document.body.style.overflow = 'scroll'
 }
 
 window.onclick = function (event) {
@@ -54,10 +58,12 @@ let span2 = document.getElementsByClassName("close2")[0];
 
 btn2.onclick = function () {
     modal2.style.display = "flex";
+    document.body.style.overflow = 'hidden'
 }
 
 span2.onclick = function () {
     modal2.style.display = "none";
+    document.body.style.overflow = 'scroll'
 }
 
 window.onclick = function (event) {
@@ -73,10 +79,12 @@ let span3 = document.getElementsByClassName("close3")[0];
 
 btn3.onclick = function () {
     modal3.style.display = "flex";
+    document.body.style.overflow = 'hidden'
 }
 
 span3.onclick = function () {
     modal3.style.display = "none";
+    document.body.style.overflow = 'scroll'
 }
 
 window.onclick = function (event) {
@@ -92,10 +100,12 @@ let span4 = document.getElementsByClassName("close4")[0];
 
 btn4.onclick = function () {
     modal4.style.display = "flex";
+    document.body.style.overflow = 'hidden'
 }
 
 span4.onclick = function () {
     modal4.style.display = "none";
+    document.body.style.overflow = 'scroll'
 }
 
 window.onclick = function (event) {
@@ -111,10 +121,12 @@ let span5 = document.getElementsByClassName("close5")[0];
 
 btn5.onclick = function () {
     modal5.style.display = "flex";
+    document.body.style.overflow = 'hidden'
 }
 
 span5.onclick = function () {
     modal5.style.display = "none";
+    document.body.style.overflow = 'scroll'
 }
 
 window.onclick = function (event) {
